@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Rejected Email Notification</name>
+    <style>none</style>
+    <subject>Leave Request Rejected</subject>
+    <textOnly>Hi {!Leave_Application__c.OwnerFirstName},
+
+Your Leave Request has been Rejected. Below are the details:
+
+Leave Start Date: {!Leave_Application__c.Start_Date__c}
+Leave End Date: {!Leave_Application__c.End_Date__c}
+Number of Days for Leave: {!Leave_Application__c.Balance__c}
+
+Thanks,
+Verivox</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Request Rejected</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+
+<table style="max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; border-collapse: collapse;">
+    <tr>
+        <td style="padding: 10px 0;">
+            <img src="https://www.designtagebuch.de/wp-content/uploads/mediathek//2017/05/verivox-v.png" alt="Verivox Logo" style="max-width: 100%;">
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 20px 0;">
+            <p>Hi {!Leave_Application__c.OwnerFirstName},</p>
+            <p>Your Leave Request has been Rejected. Below are the details:</p>
+            <ul>
+                <li><strong>Leave Start Date:</strong> {!Leave_Application__c.Start_Date__c}</li>
+                <li><strong>Leave End Date:</strong> {!Leave_Application__c.End_Date__c}</li>
+                <li><strong>Number of Days for Leave:</strong> {!Leave_Application__c.Balance__c}</li>
+            </ul>
+            <p>Thanks,<br>
+            Verivox</p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

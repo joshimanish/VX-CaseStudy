@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>New_Letter_Head</letterhead>
+    <name>Approved Email Notification</name>
+    <style>freeForm</style>
+    <subject>Leave Request Approved</subject>
+    <textOnly>Hi {!Leave_Application__c.OwnerFirstName},
+
+Your Leave Request Has been Approved. Below are the details:
+
+Leave Start Date: {!Leave_Application__c.Start_Date__c}
+Leave End Date: {!Leave_Application__c.End_Date__c}
+Number of Days for Leave: {!Leave_Application__c.Balance__c}
+Initial Balance: {!Leave_Application__c.Initial_Balance__c}
+After Balance: {!Leave_Application__c.After_Balance__c}
+
+Thanks,
+Verivox</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Application for Leave" icon-name="standard:leave_request">
+        <div class="slds-p-around_medium">
+            <lightning-input type="date" label="Start Date" required value={startDate} onchange={handleInputChange} data-id="startDate"></lightning-input>
+            <lightning-input type="date" label="End Date" required value={endDate} onchange={handleInputChange} data-id="endDate"></lightning-input>
+            <lightning-combobox label="Type of Leave" required value={typeOfLeave} placeholder="Select Type" options={leaveTypes} onchange={handleInputChange} data-id="typeOfLeave"></lightning-combobox>
+            <lightning-input type="number" label="Vacation Balance" value={vacationBalance} disabled></lightning-input>
+            <lightning-button variant="brand" label="Submit" onclick={handleSubmit}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
